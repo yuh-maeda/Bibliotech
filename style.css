@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body{
+    background-color: rgb(32, 37, 67);
+}
+
+.menu-sup{
+    background-color: rgb(28, 33, 62);
+    padding: 0px 20px;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Tektur;
+}
+
+p{
+    font-size: 25px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.567);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+i{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.385);
+}
+
+.area-livros{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-weight: 600;
+    color: rgb(217, 217, 217);
+}
+
+.area-titulo-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area-btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(107, 12, 196);
+    padding: 2px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.27);
+}
+
+.livros{
+    display: grid;
+    padding: 30px 0px;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(52, 24, 122);
+    border-radius: 15px;
+    color: white;
+    padding: 10px 20px;
+    word-wrap: break-word;
+    width: 25vw;
+}
+
+p{
+    overflow: hidden;
+}
