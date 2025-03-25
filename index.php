@@ -34,32 +34,55 @@
         </div>
 
         <div class="livros">
-           <div class="card-info">
-                <h1 class="livro-id">1</h1>
-                <h1 class="livro-titulo">Livro do Machado</h1>
-                <p class="livro-autor">Machado de Asis</p>
-                <p class="livro-data">25/25/25</p>
-                <p class="livro-data">25/25/25</p>
-
-                <a href="" class="btn"> Editar </a>
-            </div>
-
-            <div class="card-info">
-                <h1 class="livro-id">2</h1>
-                <h1 class="livro-titulo">Livro do Machado</h1>
-                <p class="livro-autor">Machado de Asis</p>
-                <p class="livro-data">25/25/25</p>
-                <p class="livro-data">25/25/25</p>
-
-                <a href="" class="btn"> Editar </a>
-            </div>
             
             <div class="card-info">
-                <h1 class="livro-id">3</h1>
-                <h1 class="livro-titulo">Livro do Machado</h1>
-                <p class="livro-autor">Machado de Asis</p>
-                <p class="livro-data">25/25/25</p>
-                <p class="livro-data">25/25/25</p>
+                <div class="area-tiutlo-id">
+                    <h1 class="livro-titulo">Livro do Machado</h1>
+                    <h1 class="livro-id">1</h1>
+                </div>
+                
+                <div class="area-autor">
+                    <p class>Autor: Machado de Asis</p>
+                </div>
+
+                <div class="area-data">
+                    <p class="livro-data"'>Data de Publicação: 25/25/25</p>
+                    <p class="livro-data">Data de chegada: 25/25/25</p>
+                </div>
+
+                <a href="" class="btn"> Editar </a>
+            </div>
+            <div class="card-info">
+                <div class="area-tiutlo-id">
+                    <h1 class="livro-titulo">Livro do Machado</h1>
+                    <h1 class="livro-id">2</h1>
+                </div>
+                
+                <div class="area-autor">
+                    <p>Autor: Machado de Asis</p>
+                </div>
+
+                <div class="area-data">
+                    <p class="livro-data"'>Data de Publicação: 25/25/25</p>
+                    <p class="livro-data">Data de chegada: 25/25/25</p>
+                </div>
+
+                <a href="" class="btn"> Editar </a>
+            </div>
+            <div class="card-info">
+                <div class="area-tiutlo-id">
+                    <h1 class="livro-titulo">Livro do Machado</h1>
+                    <h1 class="livro-id">3</h1>
+                </div>
+                
+                <div class="area-autor">
+                    <p>Autor: Machado de Asis</p>
+                </div>
+
+                <div class="area-data">
+                    <p class="livro-data"'>Data de Publicação: 25/25/25</p>
+                    <p class="livro-data">Data de chegada: 25/25/25</p>
+                </div>
 
                 <a href="" class="btn"> Editar </a>
             </div>
