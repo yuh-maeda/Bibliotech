@@ -1,0 +1,88 @@
+@import url(style.css);
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.form-livros{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 40vw;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: row;
+    background-color: rgb(28, 33, 62);
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.27);
+    position: fixed;
+}
+
+.area-input{
+    gap: 5px;
+    flex-direction: column;
+    display: flex;
+}
+
+.area-sinopse{
+    display: flex;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.text-sinopse{
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: 100%;
+    border-radius: 4px;
+    padding: 0px 3px;
+    border: none;
+}
+
+.form-h1{
+    font-size: 25px;
+}
+
+.form-input{
+    background-color: rgba(255, 255, 255, 0.856);
+    height: 27px;
+    width: 300px;
+    border-radius: 4px;
+    padding: 0px 3px;
+    border: none;
+}
+
+.submit{
+    height: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.area-btn-voltar{
+    width: 70%;
+    display: flex;
+    height: 80vh;    
+    align-items: flex-end;
+    justify-content: right;
+}
+
+a{
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+}
+
+.btn-voltar i{
+    color: white;
+    background-color: rgb(64, 31, 182);
+    padding: 11px;
+    border-radius: 14px;
+    font-size: 35px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.27);
+}
