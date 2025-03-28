@@ -82,6 +82,7 @@ i{
 }
 
 .area-titulo-btn{
+    height: 120px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,7 +106,7 @@ i{
 
 .livros{
     display: grid;
-    padding: 30px 0px;
+    gap: 30px;
     justify-content: space-around;
     grid-template-columns: auto auto auto;
     width: 100%;

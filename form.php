@@ -9,7 +9,7 @@
         $sinopse = $_POST['sinopse'];
         $genero = $_POST['genero'];
     
-        $sql_update = "INSERT INTO livro (titulo, autor, dataPub,dataCheg,genero,sinopse) VALUES ('$titulo','$autor', '$data_pub','$data_cheg','$sinopse','$genero')";
+        $sql_update = "INSERT INTO livro (titulo, autor, dataPub,dataCheg,genero,sinopse) VALUES ('$titulo','$autor', '$data_pub','$data_cheg','$genero','$sinopse')";
     
         $result_update = mysqli_query($conn,$sql_update);
         

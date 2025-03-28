@@ -20,9 +20,7 @@
         <nav class="nav-menu">
             <span class="logo"><p>Biblio</p>TECH</span>
             <ul>
-                <li><a class='link-menu' href=""> <i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a class='link-menu' href=""> <i class="fa-solid fa-info"></i> Sobre</a></li>
-                <li><a class='link-menu' href=""> <i class="fa-solid fa-phone"></i> Contate-nos</a></li>
+                <li><a class='link-menu' href="home.php"> <i class="fa-solid fa-house"></i> Home</a></li>
             </ul>
         </nav>
     </header>    
@@ -37,42 +35,39 @@
 
         <div class="livros">
             
-            <div class="card-info">
+            <?php
+                if ($result){
+                    while($row = mysqli_fetch_assoc($result)){
+                        $id = $row['id'];
+                        $titulo = $row['titulo'];
+                        $sinopse = $row['sinopse'];
+                        $genero = $row['genero'];
+                        $autor = $row['autor'];
+                        $data_pub = $row['dataPub'];
+                        $data_cheg = $row['dataCheg'];
 
-                <?php
-                    if ($result){
-                        while($row = mysqli_fetch_assoc($result)){
-                            $id = $row['id'];
-                            $titulo = $row['titulo'];
-                            $sinopse = $row['sinopse'];
-                            $genero = $row['genero'];
-                            $autor = $row['autor'];
-                            $data_pub = $row['dataPub'];
-                            $data_cheg = $row['dataCheg'];
+                        echo"<div class='card-info'>
 
-                            echo"<div class='card-info'>
- 
-                                <div class='area-tiutlo-id'>
-                                <h1 class='livro-id'>$id</h1>
-                                <h1 class='livro-titulo'>$titulo</h1>
-                                <p class='livro-sinopse'>$sinopse</p>
-                                </div>
-                                
-                                <p class='dado livro-genero'>Genero: $genero</p>
-                                <p class='dado livro-autor'>Autor: $autor</p>
-                                
-                                <div class='area-datas'>
-                                    <p class='dado livro-data'>Data de Publicação: $data_pub</p>
-                                    <p class='dado livro-data'>Data de chegada: $data_cheg</p>
-                                </div> 
-                            </div>";
-                        }
-                    }else{
-                        echo"Não á livros";
+                            <div class='area-tiutlo-id'>
+                            <h1 class='livro-id'>$id</h1>
+                            <h1 class='livro-titulo'>$titulo</h1>
+                            <p class='livro-sinopse'>$sinopse</p>
+                            </div>
+                            
+                            <p class='dado livro-genero'>Genero: $genero</p>
+                            <p class='dado livro-autor'>Autor: $autor</p>
+                            
+                            <div class='area-datas'>
+                                <p class='dado livro-data'>Data de Publicação: $data_pub</p>
+                                <p class='dado livro-data'>Data de chegada: $data_cheg</p>
+                            </div> 
+                        </div>";
                     }
-                ?>
+                }else{
+                    echo"Não á livros";
+                }
+            ?>
 
-            </div>
 
 
 

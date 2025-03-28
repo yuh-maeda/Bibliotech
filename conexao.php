@@ -1,9 +1,13 @@
 <?php
 
-$servername='10.38.0.81';
-$username='user';
-$senha='321';
-$dbname='BdD';
+// $servername='10.38.0.81';
+// $username='user';
+// $senha='321';
+// $dbname='BdD';
+$servername='localhost';
+$username='root';
+$senha='';
+$dbname='bibliotech';
 
 $conn = new mysqli($servername,$username,$senha,$dbname);
 
